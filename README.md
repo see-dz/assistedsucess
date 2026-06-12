@@ -1,13 +1,10 @@
-# Assisted Success Website
+# Assisted Success Website Version 3
 
-Files:
-- index.html
-- gallery.html
-- style.css
-- script.js
-- gallery-data.js
-- CNAME
-- photos folder
+This version positions Assisted Success as a friendly family planning and coordination service with a premium touch.
 
 ## Easy gallery updates
-Upload photos to the photos folder, then edit gallery-data.js with the file name, title, and category.
+1. Upload a photo into the photos folder.
+2. Open gallery-data.js.
+3. Copy and paste an existing gallery item.
+4. Change the image file name, title, and category.
+5. Commit changes.

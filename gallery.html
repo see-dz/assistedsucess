@@ -4,22 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Assisted Success</title>
-  <meta name="description" content="Assisted Success gallery featuring event decor, floral arrangements, party setups, and planning inspiration." />
+  <meta name="description" content="Assisted Success gallery featuring events, vacations, floral arrangements, decor, family milestones, and planning inspiration." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a href="index.html" class="brand">
-        <span class="brand-mark">AS</span>
-        <span><strong>Assisted Success</strong><small>Planning made simple</small></span>
-      </a>
+      <a href="index.html" class="brand"><span class="brand-mark">AS</span><span><strong>Assisted Success</strong><small>Planning Anything. Stressing Less.</small></span></a>
       <button class="nav-toggle" aria-label="Open navigation">☰</button>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="index.html#services">Services</a>
+        <a href="index.html#planning">What We Plan</a>
+        <a href="index.html#start">Start Here</a>
         <a href="gallery.html">Gallery</a>
-        <a href="index.html#faq">FAQ</a>
         <a href="index.html#contact">Contact</a>
       </div>
       <div class="nav-actions">
@@ -32,31 +29,33 @@
   <main>
     <section class="page-hero">
       <p class="eyebrow">Portfolio gallery</p>
-      <h1>Decor, details, and moments worth remembering.</h1>
-      <p>
-        A growing collection of event setups, artificial floral designs, decor inspiration,
-        celebrations, and planning projects from Assisted Success.
-      </p>
+      <h1>Plans, projects, celebrations, and inspiration.</h1>
+      <p>A growing collection of event setups, artificial floral designs, vacation inspiration, celebrations, decor, and planning projects from Assisted Success.</p>
     </section>
 
     <section class="section gallery-instructions">
       <h2>Easy Gallery Updates</h2>
-      <p>
-        To add photos, upload images into the <strong>photos</strong> folder in GitHub. Then open <strong>gallery-data.js</strong>,
-        copy one gallery item, paste it under the others, and change the file name, title, and category.
-      </p>
+      <p>To add photos, upload images into the <strong>photos</strong> folder in GitHub. Then open <strong>gallery-data.js</strong>, copy one gallery item, paste it under the others, and change the file name, title, and category.</p>
     </section>
 
-    <section class="section">
+    <section class="section gallery-filter-wrap">
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Vacations">Vacations</button>
+        <button class="filter-btn" data-filter="Weddings">Weddings</button>
+        <button class="filter-btn" data-filter="Birthdays">Birthdays</button>
+        <button class="filter-btn" data-filter="Florals">Florals</button>
+        <button class="filter-btn" data-filter="Projects">Projects</button>
+        <button class="filter-btn" data-filter="Business">Business</button>
+      </div>
       <div class="gallery-grid" id="galleryGrid"></div>
     </section>
   </main>
 
   <footer>
-    <div><strong>Assisted Success</strong><p>Planning made simple. Success made possible.</p></div>
+    <div><strong>Assisted Success</strong><p>Planning Anything. Stressing Less.</p></div>
     <p>© <span id="year"></span> Assisted Success. All rights reserved.</p>
   </footer>
-
   <script src="gallery-data.js"></script>
   <script src="script.js"></script>
 </body>
